@@ -2,26 +2,26 @@
 tags:
 ---
 <<SetTime 9:45PM>>
-[[Bar]]
+[[Office]]
 ===
 
-title: Bar
+title: Office
 tags: Scene
-description: Setup for the bar scene
+description: Setup for the office scene
 ---
-<<Load Bar>>
-<<View bg_bar>>
+<<Load Office>>
+<<View bg_office>>
 <<PlayMusic ambient_birds>>
-[[BarInteraction]]
+[[OfficeInteraction]]
 ===
 
-title: BarInteraction
+title: OfficeInteraction
 tags:
 ---
-<<if visited("BarInteraction") is false>>
-    Think:What the Phuck?
+<<if visited("OfficeInteraction") is false>>
+    Think: Punctuation gets pauses; yep... Cool, right?
     Player: Also, [wave s=0.5]wavy <size=150%>big[/wave]</size> text!
-   <<Show Hunter Idle>>
+    <<Show Hunter Idle>>
     Hunter: You can use TMPro's rich text tags or make your own [shake s=2]custom attributes[/shake].
     <<Show Ana Idle>>
     Ana: [screenshake a=6.0/]<b><size=200%>SCREEN SHAKE!</size></b><i> 

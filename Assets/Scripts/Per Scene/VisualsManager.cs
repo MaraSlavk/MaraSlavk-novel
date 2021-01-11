@@ -14,6 +14,8 @@ public class VisualsManager : SceneSetup
     {
         DialogueRunner runner = MainSingleton.Instance.dialogueRunner;
         runner.AddCommandHandler<string>("View", DoViewChange);
+		Debug.Log("SPRITES");
+		Debug.Log(sprites);
     }
 
     private void OnDestroy()
@@ -25,16 +27,21 @@ public class VisualsManager : SceneSetup
 
     public void DoViewChange(string spriteName)
     {
-        bgImage.sprite = FetchSprite(spriteName);
+		Debug.Log("spriteFetched");
+		bgImage.sprite = FetchSprite(spriteName);
+		
     }
 
     private Sprite FetchSprite(string assetName)
     {
-        foreach (var spr in sprites)
+		Debug.Log("FetchSprite");
+		Debug.Log(assetName);
+		foreach (var spr in sprites)
         {
+			Debug.Log(spr.name);
             if (spr.name == assetName)
             {
-                return spr;
+				return spr;
             }
         }
         return null;
